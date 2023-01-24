@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:fitsSystemWindows="true"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:background="@drawable/def3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="@dimen/dim_170"
+        android:layout_height="@dimen/dim_60"
+        android:layout_marginLeft="@dimen/dim_105"
+        android:layout_marginTop="@dimen/dim_35"
+        android:src="@drawable/weatherhub">
+
+    </ImageView>
+
+    <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_30"
+                android:layout_marginTop="@dimen/dim_280"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/city"
+                    android:layout_width="@dimen/dim_350"
+                    android:layout_height="@dimen/dim_60"
+                    android:drawableStart="@drawable/ic_baseline_cloud_24"
+                    android:hint="     CITY"
+                    android:inputType="text"
+                    android:textAlignment="inherit">
+
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_30"
+                android:layout_marginTop="@dimen/dim_380"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/country"
+                    android:layout_width="@dimen/dim_350"
+                    android:layout_height="@dimen/dim_60"
+                    android:drawableStart="@drawable/ic_baseline_cloud_24"
+                    android:hint="     COUNTRY"
+                    android:inputType="text"
+                    >
+
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_160"
+                android:layout_marginTop="@dimen/dim_500"
+                android:backgroundTint="@android:color/transparent"
+                android:text="Check"
+                android:textColor="@color/white">
+
+            </Button>
+
+
+        </RelativeLayout>

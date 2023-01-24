@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/back"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/timezone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+    <ImageView
+        android:id="@+id/moon"
+        android:visibility="gone"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_110sdp"
+        app:srcCompat="@drawable/moon" />
+
+    <ImageView
+        android:id="@+id/rain"
+        android:layout_width="@dimen/_100sdp"
+        android:visibility="gone"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_110sdp"
+        app:srcCompat="@drawable/rain" />
+    <ImageView
+        android:id="@+id/clouds"
+        android:layout_width="@dimen/_100sdp"
+        android:visibility="gone"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_110sdp"
+        app:srcCompat="@drawable/clouds" />
+    <ImageView
+        android:id="@+id/thunder"
+        android:layout_width="@dimen/_100sdp"
+        android:visibility="gone"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_110sdp"
+        app:srcCompat="@drawable/thunder" />
+
+    <ImageView
+        android:id="@+id/haze"
+        android:layout_width="@dimen/_100sdp"
+        android:visibility="gone"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_110sdp"
+        app:srcCompat="@drawable/hzae" />
+
+    <ImageView
+        android:id="@+id/sun"
+        android:visibility="gone"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_110sdp"
+        app:srcCompat="@drawable/sun" />
+
+    <TextView
+        android:id="@+id/climate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_136sdp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/_30sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_200sdp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/_50sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_320sdp"
+        android:text=""></TextView>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_340sdp"
+        android:text="">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_360sdp"
+        android:text="">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_380sdp"
+        android:text="">
+
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="102dp"
+        android:layout_height="105dp"
+        android:layout_marginLeft="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_230sdp"
+        style="?android:attr/progressBarStyleLarge"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/black"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="visible" />
+</RelativeLayout>
